@@ -11,7 +11,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   * [my-playbook.yml](YML-Playbooks/My-First-Playbook.yml) - used to install DVWA servers
   * [elk-playbook.yml](YML-Playbooks/Elk-Ansible.yml) - used to install ELK Server
     * [filebeat-playbook.yml](YML-Playbooks/Filebeat-Playbook.yml) - Used to install and configure Filebeat on Elk Server and DVWA servers
-    * [metricbeat-playbook.yml](YML-Playbooks/MetricBeat-Playbook) - Used to install and configure Metricbeat on Elk Server and DVWA servers
+    * [metricbeat-playbook.yml](YML-Playbooks/MetricBeat-Playbook.yml) - Used to install and configure Metricbeat on Elk Server and DVWA servers
 
 This document contains the following details:
 - Description of the Topology
@@ -124,7 +124,7 @@ Which URL do you navigate to in order to check that the ELK server is running?
 http://publicip(elkserver):5601
 
 ### Commands needed to run the Anisble Configuration for the Elk-Server are:
-1. ssh RedAdmin@JumpBox(PrivateIP)
+1. ssh RedAdmin@JumpBox(InternalPrivateIP)
 2. sudo docker container list -a - Locate the ansible container
 3. sudo docker start <name of container>(Funny_Name)
 4. sudo docker attach <name of container>(Funny_Name)
@@ -133,8 +133,3 @@ http://publicip(elkserver):5601
 7. cd /etc/ansible/
 8. ansible-playbook beats-playbook.yml (Installs and Configures Beats)
 9. Open a new browser on Personal Workstation, navigate to (ELK-Server-PublicIP:5601/app/kibana) - This will bring up Kibana Web Portal
-
-
-### References
-Filebeat: Lightweight Log Analysis &amp; Elasticsearch. (n.d.). Retrieved August 22, 2020, from https://www.elastic.co/beats/filebeat
-Metricbeat: Lightweight Shipper for Metrics. (n.d.). Retrieved August 22, 2020, from https://www.elastic.co/beats/metricbeat
