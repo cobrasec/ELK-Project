@@ -105,7 +105,7 @@ Which file is the playbook?
 The playbook files are:
 * [elk-playbook.yml](YML-Playbooks/Elk-Ansible.yml) - used to install ELK Server
   * [filebeat-playbook.yml](YML-Playbooks/Filebeat-Playbook.yml) - Used to install and configure Filebeat on Elk Server and DVWA servers
-  * [metricbeat-playbook.yml](YML-Playbook/MetricBeat-Playbook.yml) - Used to install and configure Metricbeat on Elk Server and DVWA servers
+  * [metricbeat-playbook.yml](YML-Playbooks/MetricBeat-Playbook.yml) - Used to install and configure Metricbeat on Elk Server and DVWA servers
 
 Where do you copy it?
 
