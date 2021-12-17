@@ -50,7 +50,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-* Personal IP Address
+* Personal IP Address 
 
 Machines within the network can only be accessed by SSH.
 * The ELK-Server is only accessible by SSH from the JumpBox and via web access from my personal IP address.
@@ -98,7 +98,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the filebeat-config.yml and metricbeat-config.yml file to /etc/ansible/files.
-- Update the configuration files to include the Private IP of the ELK-Server to the ElasticSearch and Kibana Sections of the Configuration File
+- Update the configuration files to include the Private IP of the ELK-Server to the ElasticSearch and Kibana Sections of the Configuration File.
 - Run the playbook, and navigate to (ELK-Server-PublicIP):5601/app/kibana to check that the installation worked as expected (note: Take out the parentheses in the URL).
 
 Which file is the playbook?
@@ -117,7 +117,7 @@ Which file do you update to make Ansible run the playbook on a specific machine?
 
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
-In /etc/ansible/hosts you tell it where you want eachto be installed ElkServers or FileBeat
+In /etc/ansible/hosts you tell it where you want it to be installed, ElkServers or FileBeat.
 
 Which URL do you navigate to in order to check that the ELK server is running?
 
@@ -132,4 +132,4 @@ http://publicip(elkserver):5601
 6. ansible-playbook elk-playbook.yml (Installs and Configures ELK-Server)
 7. cd /etc/ansible/
 8. ansible-playbook beats-playbook.yml (Installs and Configures Beats)
-9. Open a new browser on Personal Workstation, navigate to (ELK-Server-PublicIP:5601/app/kibana) - This will bring up Kibana Web Portal
+9. Open a new browser on Personal Workstation, navigate to (ELK-Server-PublicIP:5601/app/kibana) - This will bring up Kibana Web Portal.
