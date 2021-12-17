@@ -53,7 +53,7 @@ Only the Jump Box Provisioner machine can accept connections from the Internet. 
 * Personal IP Address
 
 Machines within the network can only be accessed by SSH.
-* The ELK-Server is only accessible by SSH from the JumpBox and via web access from Personal IP Address.
+* The ELK-Server is only accessible by SSH from the JumpBox and via web access from my personal IP address.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -82,8 +82,8 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-* Web-1 10.1.5
-* Web-2 10.1.6
+* Web-1 10.0.0.5
+* Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
 * Filebeat
@@ -99,7 +99,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the filebeat-config.yml and metricbeat-config.yml file to /etc/ansible/files.
 - Update the configuration files to include the Private IP of the ELK-Server to the ElasticSearch and Kibana Sections of the Configuration File
-- Run the playbook, and navigate to ELK-Server-PublicIP:5601/app/kibana to check that the installation worked as expected.
+- Run the playbook, and navigate to (ELK-Server-PublicIP):5601/app/kibana to check that the installation worked as expected (note: Take out the parentheses in the URL).
 
 Which file is the playbook?
 The playbook files are:
