@@ -1,0 +1,21 @@
+Step 3, part 4: 
+
+The times the losses occured on each day: 
+March 10th:
+5am
+8am
+2pm
+8pm
+11pm
+March 12th: 
+5am
+8am
+2pm
+8pm
+11pm
+march 15th:
+5am 
+8am
+
+
+The player that was playing during each of those times was Mylie Schmidt. The total count of times she was playing was 13.
